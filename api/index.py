@@ -21,6 +21,10 @@ def home():
 def about():
     return 'About'
 
+@app.route('/favicon.ico')
+def favicon():
+    return '', 404
+
 # @app.route('/predict', methods=["POST"])
 # def predict():
 #     # Get the input data from the request body
