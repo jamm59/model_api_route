@@ -3,13 +3,13 @@ from transformers import AutoTokenizer, AutoModelForSeq2SeqLM
 
 app = Flask(__name__)
 
-# # initialize the tokenizer and model
-# tokenizer = AutoTokenizer.from_pretrained(
-#     "jamm55/autotrain-improved-pidgin-model-2837583189"
-# )
-# model = AutoModelForSeq2SeqLM.from_pretrained(
-#     "jamm55/autotrain-improved-pidgin-model-2837583189"
-# )
+# initialize the tokenizer and model
+tokenizer = AutoTokenizer.from_pretrained(
+    "jamm55/autotrain-improved-pidgin-model-2837583189"
+)
+model = AutoModelForSeq2SeqLM.from_pretrained(
+    "jamm55/autotrain-improved-pidgin-model-2837583189"
+)
 
 @app.route('/')
 def home():
@@ -33,5 +33,5 @@ def about():
 #     # Return the prediction as a JSON response
 #     return jsonify({'prediction': predicted_text})
 
-# if __name__ == '__main__':
-#     app.run()
+if __name__ == '__main__':
+    app.run(debug=True)
