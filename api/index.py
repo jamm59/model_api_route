@@ -1,5 +1,5 @@
 from flask import Flask, request, jsonify
-#from transformers import AutoTokenizer, AutoModelForSeq2SeqLM
+from transformers import AutoTokenizer, AutoModelForSeq2SeqLM
 
 app = Flask(__name__)
 
