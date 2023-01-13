@@ -1,7 +1,7 @@
 import os
 from flask import Flask, request, jsonify
 from transformers import AutoTokenizer, AutoModelForSeq2SeqLM
-os.environ["TRANSFORMERS_CACHE"] = '/tmp/transformers_cache'
+os.environ["TRANSFORMERS_CACHE"] = '/.cache/huggingface/transformers'
 
 app = Flask(__name__)
 
